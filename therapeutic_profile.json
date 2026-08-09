@@ -1,0 +1,110 @@
+{
+  "target": {
+    "group": "UNREVIEWED_HUMAN",
+    "similarity": 0.06081185032770334,
+    "protein_name": "UNREVIEWED_HUMAN",
+    "chembl_id": null,
+    "score": 0.048649480262162675
+  },
+  "peptide": {
+    "sequence": "DKDLNAAAAAA",
+    "properties": {
+      "charge": -1,
+      "molecular_weight": 1210.3,
+      "hydrophobicity": 0.018181818181818157,
+      "isoelectric_point": 6.5,
+      "solubility_mg_ml": 13.296969696969697,
+      "length": 11
+    },
+    "activity": {
+      "score": 0.854232553451044,
+      "confidence": 0.9328684675789422,
+      "message": "Predicted activity: 0.854 \u00b1 0.067"
+    }
+  },
+  "comparison": {
+    "peptide_affinity_nM": 0.012,
+    "known_inhibitors": {
+      "Remdesivir": {
+        "ic50": 0.08,
+        "ki": 0.05,
+        "kd": 0.08,
+        "type": "small_molecule"
+      },
+      "Favipiravir": {
+        "ic50": 0.25,
+        "ki": 0.18,
+        "kd": 0.25,
+        "type": "small_molecule"
+      },
+      "ZMapp": {
+        "ic50": 0.015,
+        "ki": 0.01,
+        "kd": 0.015,
+        "type": "antibody"
+      },
+      "REGN-EB3": {
+        "ic50": 0.012,
+        "ki": 0.008,
+        "kd": 0.012,
+        "type": "antibody"
+      },
+      "mAb114": {
+        "ic50": 0.009,
+        "ki": 0.006,
+        "kd": 0.009,
+        "type": "antibody"
+      }
+    },
+    "comparison": [
+      {
+        "name": "Favipiravir",
+        "ic50_nM": 0.25,
+        "type": "small_molecule",
+        "ratio_to_peptide": 20.833333333333332,
+        "better_than_peptide": false
+      },
+      {
+        "name": "Remdesivir",
+        "ic50_nM": 0.08,
+        "type": "small_molecule",
+        "ratio_to_peptide": 6.666666666666667,
+        "better_than_peptide": false
+      },
+      {
+        "name": "ZMapp",
+        "ic50_nM": 0.015,
+        "type": "antibody",
+        "ratio_to_peptide": 1.25,
+        "better_than_peptide": false
+      },
+      {
+        "name": "REGN-EB3",
+        "ic50_nM": 0.012,
+        "type": "antibody",
+        "ratio_to_peptide": 1.0,
+        "better_than_peptide": false
+      },
+      {
+        "name": "mAb114",
+        "ic50_nM": 0.009,
+        "type": "antibody",
+        "ratio_to_peptide": 0.7499999999999999,
+        "better_than_peptide": true
+      }
+    ],
+    "best_match": {
+      "name": "Favipiravir",
+      "ic50_nM": 0.25,
+      "type": "small_molecule",
+      "ratio_to_peptide": 20.833333333333332,
+      "better_than_peptide": false
+    }
+  },
+  "recommendations": [
+    "SYNTHESIZE: Sequence DKDLNAAAAAA by solid-phase synthesis",
+    "FORMULATE: PBS pH 7.4 buffer",
+    "PROTECT: Add protecting groups at N and Q (avoid deamidation)",
+    "VALIDATE: GP binding assays (SPR/ITC)"
+  ]
+}
